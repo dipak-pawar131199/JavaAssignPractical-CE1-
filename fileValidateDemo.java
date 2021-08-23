@@ -32,9 +32,8 @@ public class fileValidateDemo extends JApplet implements ActionListener
    }
    public void actionPerformed(ActionEvent e)
    {
-      // try-catch block to handle java.security.AccessControlException exception
-      try
-      {
+     
+      
          String action =b1.getActionCommand();
          if(action.equals("Accept"))
          {
@@ -45,11 +44,7 @@ public class fileValidateDemo extends JApplet implements ActionListener
             JOptionPane.showMessageDialog(null,cft.validateFile());
          }
                
-     }
-     catch(Exception se)
-     {
-      
-     }
+    
      
    }
 }   
